@@ -1568,31 +1568,6 @@
 				width: auto;
 			}
 
-/* Rating */
-
-	.rating{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		position: absolute;
-		top: -5px;
-		left: -5px;
-		width: 30px;
-		height: 30px;
-		border-radius: 50%;
-		border: 1px solid #bbb;
-		background: #fff;
-	}
-	.winner{
-			background: #FFD700;	
-	}			
-		.rating-value{
-			font-weight: bold;
-		}
-	.winner .rating-value{
-			color: #000;
-	}	
-
 
 /* Button */
 
@@ -1741,19 +1716,63 @@
 	}
 
 		.box-header{
-			position: relative;
 			display: flex;
-			align-items: flex-end;
-			text-decoration: none;
-			color: #000;
-			outline: none;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			margin-top: 20px;
 		}
 
-		.box-header:hover{
-			color: #000;
-			text-decoration: underline; 
-			outline: none;
-		}
+			.box-header_link{
+				position: relative;
+				display: flex;
+				align-items: flex-end;
+				width: 70%;
+				text-decoration: none;
+				color: #000;
+				outline: none;
+			}
+			.box-header_link:hover{
+				color: #000;
+				text-decoration: underline;
+				outline: none;
+			}
+				.index_number{
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					position: absolute;
+					top: -5px;
+					left: -5px;
+					width: 30px;
+					height: 30px;
+					border-radius: 50%;
+					border: 1px solid #bbb;
+					background: #fff;
+				}
+				.winner{
+					background: #FFD700;
+				}
+				.rating-value{
+					font-weight: bold;
+				}
+				.winner .rating-value{
+					color: #000;
+				}
+
+			.box-header_rating {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 30%;
+				background: #20C1E8;
+				max-width: 120px;
+				padding: 5px 0;
+				border-radius: 6px 0 0 6px;
+				color: #fff;
+				font-size: 1.8em;
+				font-weight: 600;
+			}
 
 		.box.feature {
 			padding: 0;
@@ -1774,7 +1793,7 @@
 
 			.box.feature .image {
 				position: relative;
-				margin: 20px 20px 0;
+				margin: 0 20px 0;
 			}
 			.info-table{
 					display: table;
@@ -1798,6 +1817,10 @@
 								padding: 5px 10px;
 								font-weight: bold;
 						}
+							.max-evaluation{
+								font-size: 0.75em;
+								color: #bebebe;
+							}
 
 
 /* Icons */
